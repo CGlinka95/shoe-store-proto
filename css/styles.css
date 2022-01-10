@@ -1,11 +1,11 @@
 :root {
     /** colours **/
-    --yellow:           #FED766; 
-    --lt-seafoam-green: #ecf9f6;
-    --seafoam-green:    #43C6AC;
-    --md-blue:          #191654;
-    --dk-blue:          #0C0B2A;
-    --blue-grey:        #6B717E;
+    --yellow:           #00A676; 
+    --lt-seafoam-green: #EBEBEB;
+    --seafoam-green:    #F7F9F9;
+    --md-blue:          #3A6EA5;
+    --dk-blue:          #004E98;
+    --blue-grey:        #C0C0C0;
 
     /** typography **/
     --headings:'Monoton', cursive;
@@ -24,23 +24,34 @@
 /* Typography */
 h1 {
     font-family: var(--headings);
+    font-weight: 400;
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--dk-blue);
 }
 
 h2 {
     font-family: var(--headings);
     text-transform: uppercase;
     font-weight: 400;
+    color: var(--dk-blue);
 }
 
 main h2 {
     font-size: 3rem;
-    border-bottom: solid var(--seafoam-green) 2px;
+    border-bottom: solid var(--yellow) 2px;
+}
+
+footer h2 {
+    color: var(--seafoam-green);
 }
 
 h3 {
     font-size: 2rem;
     margin-bottom: 0.7rem;
-    color: var(--seafoam-green);
+    color: var(--dk-blue);
 }
 
 p {
@@ -148,7 +159,7 @@ header .flex > svg:hover {
 
 .main-menu li {
     list-style: none;
-    border-bottom: solid var(--seafoam-green) 1px;
+    border-bottom: solid var(--yellow) 1px;
     padding: 0 1rem;
 }
 
@@ -180,32 +191,32 @@ input[id="search"] {
 /* Page 1: Home */
 /* Main */
 .home-section-1 {
-    background: rgb(25,22,84);
-    background: linear-gradient(45deg, rgba(25,22,84,1) 0%, rgba(9,9,121,1) 35%, rgba(67,198,172,1) 100%);
+    background: rgb(0,78,152);
+    background: linear-gradient(41deg, rgba(0,78,152,1) 0%, rgba(247,249,249,1) 50%, rgba(137,220,238,1) 100%);
     padding-bottom: 4rem;
 }
 
 .home-section-1 h2 {
     font-size: 4rem;
-    color: var(--lt-seafoam-green);
+    color: var(--dk-blue);
     padding-top: 4rem;
 }
 
 .home-section-1 p {
-    color: whitesmoke;
+    color: var(--dk-blue);
     padding-bottom: 2rem;
 }
 
 
 .home-section-1 button {
     margin-bottom: 1rem;
-    background-color: var(--seafoam-green);
-    color: var(--md-blue);
+    background-color: var(--yellow);
+    color: var(--lt-seafoam-green);
 }
 
 .home-section-1 button:hover {
-    background-color: var(--lt-seafoam-green);
-    color: var(--seafoam-green);
+    background-color: var(--seafoam-green);
+    color: var(--md-blue);
 }
 
 .home-section-1 button:last-of-type {
@@ -232,7 +243,8 @@ main section:nth-child(2) button {
 }
 
 main section:nth-child(2) button:hover {
-    background-color: var(--seafoam-green);
+    background-color: var(--yellow);
+    color: var(--seafoam-green);
 }
 
 /* Horizontal Scroll */
@@ -290,7 +302,8 @@ main section:nth-child(3) button {
 }
 
 main section:nth-child(3) button:hover {
-    background-color: var(--seafoam-green);
+    background-color: var(--yellow);
+    color: var(--seafoam-green);
 }
 
 main section:nth-child(3) img {
@@ -318,13 +331,14 @@ main section:nth-child(4) button {
 }
 
 main section:nth-child(4) button:hover {
-    background-color: var(--lt-seafoam-green);
+    background-color: var(--yellow);
     color: var(--seafoam-green);
 }
 
 /* Section 5 */
 .sec-flex-container section:first-of-type {
     background-color: var(--md-blue);
+    margin-bottom: 0;
     padding-bottom: 0.5rem;
     padding-top: 3.5rem;
 }
@@ -351,24 +365,6 @@ main section:nth-child(4) button:hover {
 .sec-flex-container section:first-of-type button:hover {
     background-color: var(--lt-seafoam-green);
     color: var(--md-blue);
-}
-
-/* Section 6 */
-.sec-flex-container section:last-of-type img {
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-    width: 100%;
-}
-
-.sec-flex-container section:last-of-type a {
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    border-bottom: solid var(--seafoam-green) 2px;
-}
-
-.sec-flex-container section:last-of-type a:hover {
-    cursor: pointer;
 }
 
 /* Page 1 Background-img */
@@ -411,7 +407,8 @@ main section:nth-child(4) button:hover {
 }
 
 .background-img button:hover {
-    background-color: var(--lt-seafoam-green);
+    background-color: var(--yellow);
+    color: var(--seafoam-green);
 }
 
 /* Page 2: Contact Us */
@@ -687,6 +684,7 @@ footer .lg-flex-container section form {
 
 .subscription-form-control button:hover {
     background-color: var(--yellow);
+    color: var(--seafoam-green);
 }
 
 footer .lg-flex-container section p {
